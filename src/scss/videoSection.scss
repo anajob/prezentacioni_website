@@ -1,0 +1,75 @@
+.videoSectionWrapper {
+  background-color: #000;
+}
+.videoSection {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+  @media (min-width: 1024px) {
+    padding: 100px;
+  }
+
+  .textContent {
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    padding: 50px 40px;
+    @media (min-width: 768px) {
+      order: 2;
+      width: 50%;
+    }
+    @media (min-width: 1024px) {
+      width: 40%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .title {
+      font-weight: 400;
+      font-size: $titleFontSize;
+      padding-bottom: 25px;
+    }
+    p {
+      font-size: $paragrafTextFont;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+  }
+  .videoContent {
+    padding-bottom: 50px;
+    width: 100%;
+    position: relative;
+    @media (min-width: 768px) {
+      padding: 50px;
+      width: 60%;
+      order: 1;
+    }
+    @media (min-width: 1024px) {
+      padding: 0 30px 0 0;
+    }
+
+    .videoWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      video {
+        width: 100%;
+        z-index: 1;
+      }
+      svg {
+        z-index: 3;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+      }
+    }
+  }
+}

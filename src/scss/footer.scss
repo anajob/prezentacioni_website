@@ -1,0 +1,189 @@
+.footerTopItemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $primaryColor;
+  margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.footerBottomItemsContainer {
+  text-align: center;
+}
+
+.careersSide {
+  position: relative;
+  background-image: url("../img/SlikaNaslovna.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+  @media (min-width: 1024px) {
+    width: 35%;
+  }
+  .careersOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .careersContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25px;
+
+    .careersText {
+      text-align: left;
+      padding: 20px 0;
+    }
+    h3 {
+      font-size: $titleFontSize;
+      font-weight: 600;
+    }
+  }
+}
+
+.footerMenu {
+  font-size: 14px;
+  color: $darkGreyColor;
+  margin-left: 40px;
+  text-align: left;
+
+  @media (min-width: 768px) {
+    margin: auto;
+    padding: 20px;
+    max-width: 1435px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  li {
+    padding-bottom: 20px;
+    a {
+      color: $darkGreyColor;
+      font-weight: 400;
+    }
+    &:hover {
+      font-weight: 600;
+      color: #62666b;
+    }
+  }
+}
+.menuContactSide {
+  text-align: center;
+  @media (min-width: 768px) {
+    position: relative;
+  }
+  @media (min-width: 1024px) {
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .primaryMenu {
+    ul {
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 160px;
+        max-width: 320px;
+        margin-top: 90px;
+      }
+    }
+  }
+
+  .socialMediaBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 65px;
+    @media (min-width: 1024px) {
+      justify-content: flex-start;
+      margin: 0;
+    }
+    span {
+      margin: 0 20px;
+      color: $darkGreyColor;
+    }
+    a {
+      margin-right: 10px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .storeIcons {
+    display: flex;
+    justify-content: center;
+    margin: 0 25px 70px 25px;
+
+    @media (max-width: 350px) {
+      margin: 0 5px 70px 5px;
+    }
+
+    @media (min-width: 1024px) {
+      justify-content: left;
+      margin: 50px 0 10px 50px;
+      width: 370px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    @media (min-width: 1360px) {
+      left: 20%;
+    }
+
+    @media (min-width: 1800px) {
+      left: 30%;
+    }
+
+    img {
+      width: 100px;
+      height: 30px;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .phoneImgWrapper {
+    background-image: url("../img/telefon.jpg");
+    height: 280px;
+    background-position: top;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    margin-bottom: 35px;
+    @media (min-width: 768px) {
+      position: absolute;
+      width: 235px;
+      bottom: 20%;
+      left: 120%;
+      margin-bottom: 0;
+    }
+    @media (min-width: 1024px) {
+      bottom: 0;
+      left: 60%;
+    }
+  }
+}

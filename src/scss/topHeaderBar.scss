@@ -1,0 +1,77 @@
+.topBar {
+  height: 70px;
+  color: #9f9f9f;
+}
+
+.desktopTopBar {
+  display: none;
+  padding: 30px 45px 10px 45px;
+  span {
+    margin-left: 10px;
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+
+  .elWrapper {
+    display: flex;
+    flex: 1;
+  }
+
+  .socialMediaBox {
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+    display: none;
+    li {
+      margin-right: 20px;
+    }
+  }
+  .locationCursInfo {
+    margin-left: 100px;
+    a {
+      color: $primaryColor;
+    }
+    a:last-child {
+      margin-left: 35px;
+    }
+  }
+}
+
+.mobileTopBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
+  .contactInfo {
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .textBtnAction {
+    justify-content: center;
+    margin-right: 15px;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    width: 50px;
+    height: 35px;
+    background-color: $secondaryColor;
+    border: none;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,20 @@
+<svg id="MENU" xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #f2f2f2;
+      }
+
+      .cls-3 {
+        fill: #f7f7f7;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="20" height="2"/>
+  <rect id="Rectangle_9_copy_2" data-name="Rectangle 9 copy 2" class="cls-2" y="12" width="20" height="2"/>
+  <rect id="Rectangle_9_copy" data-name="Rectangle 9 copy" class="cls-3" y="6" width="20" height="2"/>
+</svg>

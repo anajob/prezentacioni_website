@@ -1,0 +1,88 @@
+.eBankingWrapper {
+  background-color: $greyColor;
+}
+.wideContainer {
+  text-align: center;
+}
+
+.eBankingSliderSection {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: 1024px) {
+    padding: 100px;
+  }
+
+  .eBankingTextContainer {
+    padding: 50px 35px;
+    text-align: left;
+    @media (min-width: 768px) {
+      width: 40%;
+      align-items: flex-start;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: $titleFontSize;
+    }
+    p {
+      margin-bottom: 30px;
+      @media (min-width: 768px) {
+        max-width: 420px;
+      }
+    }
+    @media (min-width: 1024px) {
+      padding: 0;
+    }
+  }
+
+  .eBankingSliderContainer {
+    .splide__arrows {
+      button {
+        color: $greyColor;
+        svg {
+          width: 20px;
+          height: 20px;
+          color: $greyColor;
+        }
+      }
+    }
+    .splide__pagination {
+      bottom: -50px;
+    }
+    .splide__pagination__page.is-active {
+      background: $secondaryColor;
+    }
+
+    .splide__pagination li {
+      margin-left: 5px;
+    }
+
+    .splide__arrow {
+      background: transparent;
+    }
+
+    padding-bottom: 120px;
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: none;
+    }
+    @media (min-width: 768px) {
+      width: 60%;
+      padding-top: 50px;
+      padding-right: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media (min-width: 1024px) {
+      padding: 0 0 0 50px;
+    }
+  }
+}

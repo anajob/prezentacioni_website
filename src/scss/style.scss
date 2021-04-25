@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+$secondaryColor: #e60028;
+$primaryColor: #9f9f9f;
+$maxWidth: 1435px;
+$greyColor: #f7f7f7;
+$paragrafTextFont: 14px;
+$paragrafTextColor: #b4b4b7;
+$darkGreyColor: #9e9ea2;
+$titleFontSize: 20px;
+
+body {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.paragrafText {
+  font-size: $paragrafTextFont;
+  color: $paragrafTextColor;
+  line-height: 1.5;
+}
+
+.wideContainer {
+  margin: auto;
+  text-align: left;
+  max-width: $maxWidth;
+}
+
+@import "buttons.scss";
+@import "topHeaderBar";
+@import "mainMenu";
+@import "headerPostCardsSection";
+@import "products";
+@import "videoSection";
+@import "eBankingSliderSection";
+@import "blogSection";
+@import "questionForm";
+@import "locations";
+@import "footer";
+@import "heading";
+@import "creditsTableSection";

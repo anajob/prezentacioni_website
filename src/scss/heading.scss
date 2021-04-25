@@ -1,0 +1,63 @@
+.headingImage {
+  position: relative;
+  background-image: url("../img/SlikaNaslovna.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 740px;
+}
+
+.headingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.headingContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.sliderContentWrapper {
+  max-width: $maxWidth;
+  margin: auto;
+}
+
+.darkOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 740px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.sliderContent {
+  padding: 110px 40px 60px 40px;
+  text-align: left;
+  color: #fff;
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+}
+
+.sliderHeading {
+  font-size: 38px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.sliderText {
+  font-size: 19px;
+  line-height: 1.6;
+}

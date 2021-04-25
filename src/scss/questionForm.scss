@@ -1,0 +1,115 @@
+.questionFormSection {
+  max-width: 720px;
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
+  h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: $titleFontSize;
+  }
+
+  p {
+    color: $darkGreyColor;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 35px 50px 35px;
+
+    @media (min-width: 1024px) {
+      padding-bottom: 120px;
+    }
+  }
+
+  .questionForm {
+    padding: 0 10px;
+    label {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 15px;
+      color: $darkGreyColor;
+      text-align: left;
+      cursor: text;
+    }
+
+    .email {
+      margin-bottom: 50px;
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $darkGreyColor;
+        background-color: transparent;
+        &:focus {
+          outline: none;
+          border-bottom: 1px solid $secondaryColor;
+        }
+        &::placeholder {
+          font-size: 15px;
+        }
+      }
+    }
+
+    textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $darkGreyColor;
+      text-align: left;
+      margin-bottom: 30px;
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $secondaryColor;
+      }
+    }
+    .check {
+      width: 100%;
+      display: block;
+      input {
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+      }
+      label {
+        font-size: $paragrafTextFont;
+        position: relative;
+        cursor: pointer;
+        &:before {
+          content: "";
+          background-color: transparent;
+          border: 2px solid $darkGreyColor;
+          padding: 5px;
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-right: 5px;
+        }
+      }
+      input:checked + label:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 9px;
+        width: 6px;
+        height: 14px;
+        border: solid $secondaryColor;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .submitBtn {
+    border: none;
+    box-sizing: border-box;
+  }
+  @media (min-width: 768px) {
+    .actionBtns {
+      display: flex;
+    }
+  }
+}

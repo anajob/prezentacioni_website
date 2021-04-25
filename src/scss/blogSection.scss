@@ -1,0 +1,65 @@
+.blogSection {
+  margin-top: 50px;
+  padding: 0 30px;
+  @media (min-width: 1024px) {
+    padding: 100px;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: $titleFontSize;
+    padding-bottom: 30px;
+    @media (min-width: 1024px) {
+      padding-bottom: 50px;
+    }
+  }
+
+  .blogCardsContainer {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (min-width: 1024px) {
+      flex-wrap: nowrap;
+    }
+
+    .blogCard {
+      box-sizing: border-box;
+      margin-bottom: 30px;
+      max-width: 600px;
+
+      @media (min-width: 1024px) {
+        margin-right: 50px;
+      }
+
+      h5 {
+        color: $primaryColor;
+        text-align: left;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .imgContainer {
+        height: 206px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .postTitle {
+        margin: 20px 0;
+        text-align: left;
+        font-weight: 600;
+      }
+
+      .postText {
+        text-align: left;
+        margin-bottom: 20px;
+        display: none;
+        @media (min-width: 1024px) {
+          display: block;
+        }
+      }
+    }
+  }
+}

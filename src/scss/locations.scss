@@ -1,0 +1,52 @@
+.locations {
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .roundBtn {
+    margin-top: 10px;
+  }
+
+  h3 {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .locationEl {
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mapLocation {
+    background-image: url("../img/mapaekspozitura.jpg");
+  }
+
+  .locationContent {
+    z-index: 2;
+  }
+
+  .onlineLocation {
+    background-image: url("../img/online ekspozitura.jpg");
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+}

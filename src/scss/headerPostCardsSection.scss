@@ -1,0 +1,63 @@
+.headerPostCards {
+  position: relative;
+  top: -120px;
+  margin-bottom: -60px;
+
+  .cardsContainer {
+    max-width: 1020px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+    @media (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 25px;
+    z-index: 3;
+    height: 480px;
+    box-sizing: border-box;
+    border: 1px solid #dddbdb;
+    font-size: 14px;
+    @media (min-width: 768px) {
+      width: 45%;
+    }
+    .cardTopPart {
+      padding: 25px 25px 60px 25px;
+      text-align: left;
+      background-color: #f7f7f7;
+      border-bottom: 1px solid #dddbdb;
+
+      @media (min-width: 1024px) {
+        padding: 50px 50px 25px 50px;
+      }
+
+      h4 {
+        font-weight: 600;
+        margin-bottom: 20px;
+        @media (min-width: 1024px) {
+          font-size: 17px;
+        }
+      }
+      p {
+        font-size: 14px;
+        color: #8f9193;
+        margin-bottom: 30px;
+        @media (min-width: 1024px) {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .cardBottomPart {
+      padding: 50px;
+      font-size: 14px;
+      color: #8f9193;
+      .cardBottomText {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
