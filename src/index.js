@@ -1,8 +1,16 @@
 import "./scss/style.scss";
-import "@splidejs/splide/dist/css/splide.min.css";
+import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
 import Splide from "@splidejs/splide";
 
-new Splide(".splide").mount();
+var splide = new Splide(".headingSlider");
+var rate = 0.1;
+splide.on("autoplay:playing", function (rate) {
+  console.log(rate); // 0-1
+});
+
+splide.mount();
+// new Splide(".headingSlider").mount();
+new Splide("#image-slider").mount();
 
 AOS.init();
 
@@ -11,11 +19,7 @@ $(document).ready(function () {
   const $dropdownMenu = $(".dropDownMenuDesktop");
 
   $itemWithDropdown.on("click", function () {
-    if ($dropdownMenu.hasClass("isActive")) {
-      $dropdownMenu.removeClass("isActive");
-    } else {
-      $dropdownMenu.addClass("isActive");
-    }
+    $dropdownMenu.toggleClass("isActive");
   });
 
   $(".hamburgerMenu").on("click", function () {

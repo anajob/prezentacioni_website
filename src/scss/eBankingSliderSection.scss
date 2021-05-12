@@ -8,6 +8,7 @@
 .eBankingSliderSection {
   display: flex;
   flex-wrap: wrap;
+  border: none;
   @media (min-width: 1024px) {
     padding: 100px;
   }
@@ -40,25 +41,30 @@
   }
 
   .eBankingSliderContainer {
+    .splide {
+      border: none !important;
+    }
     .splide__arrows {
       button {
         color: $greyColor;
         svg {
           width: 20px;
           height: 20px;
-          color: $greyColor;
+          fill: $darkGreyColor;
         }
       }
     }
-    .splide__pagination {
-      bottom: -50px;
-    }
+
     .splide__pagination__page.is-active {
       background: $secondaryColor;
     }
 
     .splide__pagination li {
       margin-left: 5px;
+      button {
+        width: 8px;
+        height: 8px;
+      }
     }
 
     .splide__arrow {
